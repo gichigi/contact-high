@@ -1,0 +1,74 @@
+---
+description: Security checks before GitHub push
+---
+
+# Security Check Before GitHub Push
+
+## Pre-Push Security Checklist
+
+Before pushing code to GitHub, always perform these security checks:
+
+### 1. API Keys & Secrets
+- [ ] Scan for hardcoded API keys, tokens, or secrets
+- [ ] Check for environment variables that should be in `.env` files
+- [ ] Look for database connection strings with credentials
+- [ ] Verify no AWS keys, GitHub tokens, or other service credentials
+
+### 2. Common Patterns to Search For
+```bash
+# Search for potential secrets
+grep -r "api[_-]?key" . --exclude-dir=node_modules
+grep -r "secret" . --exclude-dir=node_modules
+grep -r "password" . --exclude-dir=node_modules
+grep -r "token" . --exclude-dir=node_modules
+grep -r "private[_-]?key" . --exclude-dir=node_modules
+```
+
+### 3. File Types to Check
+- Configuration files (`.env`, `.config.js`, `config.json`)
+- Source code files (`.js`, `.ts`, `.tsx`, `.py`, etc.)
+- Documentation files (`.md`, `.txt`)
+- Deployment files (`docker-compose.yml`, `Dockerfile`)
+
+### 4. Environment Variables
+- [ ] All sensitive data should use `process.env.VARIABLE_NAME`
+- [ ] `.env` files are in `.gitignore`
+- [ ] No `.env` files are staged for commit
+- [ ] Example values are used in documentation
+
+### 5. URLs & Endpoints
+- [ ] No production database URLs with credentials
+- [ ] No internal service URLs that shouldn't be public
+- [ ] API endpoints use environment variables for base URLs
+
+### 6. Quick Commands
+```bash
+# Check what's being committed
+git diff --cached
+
+# Check for common secret patterns
+git diff --cached | grep -i -E "(api[_-]?key|secret|password|token|private[_-]?key)"
+
+# Verify .env is ignored
+git check-ignore .env
+```
+
+### 7. If Secrets Found
+1. **STOP** - Do not commit
+2. Move secrets to environment variables
+3. Add to `.env` file (ensure it's in `.gitignore`)
+4. Update code to use `process.env.VARIABLE_NAME`
+5. Re-run security check
+
+### 8. Emergency Response
+If secrets were already pushed:
+1. Rotate/revoke the exposed credentials immediately
+2. Remove from git history: `git filter-branch` or `BFG Repo-Cleaner`
+3. Force push to update remote repository
+4. Notify team if shared repository
+
+## Remember
+- **When in doubt, don't commit**
+- **Better safe than sorry**
+- **Environment variables are your friend**
+- **Regular security checks prevent disasters**

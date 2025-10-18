@@ -1,7 +1,8 @@
 {
-  "name": "my-v0-project",
+  "name": "contact-high",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Remember who you met (kinda). A landing page that demonstrates how killer brand voice can make simple ideas interesting.",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
