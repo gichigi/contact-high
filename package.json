@@ -3,6 +3,17 @@
   "version": "0.1.0",
   "private": false,
   "description": "Remember who you met (kinda). A landing page that demonstrates how killer brand voice can make simple ideas interesting.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gichigi/contact-high.git"
+  },
+  "homepage": "https://github.com/gichigi/contact-high#readme",
+  "bugs": {
+    "url": "https://github.com/gichigi/contact-high/issues"
+  },
+  "keywords": ["nextjs", "react", "landing-page", "brand-voice", "contact-management"],
+  "author": "gichigi",
+  "license": "MIT",
   "scripts": {
     "build": "next build",
     "dev": "next dev",

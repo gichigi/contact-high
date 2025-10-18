@@ -2,8 +2,8 @@
 
 *Remember who you met (kinda).*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gichigi-mecoms-projects/v0-contact-high-ms)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/a9oFi7xmmPW)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://contact-high.vercel.app)
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 
 ## The Brand Story
 
@@ -143,7 +143,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Built with [v0.app](https://v0.app) for rapid prototyping
 - UI components from [shadcn/ui](https://ui.shadcn.com)
 - Deployed on [Vercel](https://vercel.com)
 - Inspired by the power of good copy in product design
