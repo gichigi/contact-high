@@ -1,9 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Nunito_Sans } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({
+const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "ContactHigh",
     images: [
       {
-        url: "/placeholder-logo.png",
+        url: "/social-image.svg",
         width: 1200,
         height: 630,
         alt: "ContactHigh - Remember who you met (kinda)",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ContactHigh - Remember who you met (kinda)",
     description: "Remember who you met (kinda). ContactHigh shows you which contacts you saved, when, and where. No more awkward 'wait, who are you?' moments.",
-    images: ["/placeholder-logo.png"],
+    images: ["/social-image.svg"],
     creator: "@contacthigh",
   },
   robots: {
@@ -64,9 +64,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/apple-icon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
   },
   manifest: "/manifest.json",
   themeColor: [
@@ -82,7 +81,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans`}>{children}</body>
+      <body className={`${nunitoSans.variable} font-sans`}>{children}</body>
     </html>
   )
 }

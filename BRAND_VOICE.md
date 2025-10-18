@@ -4,6 +4,16 @@
 
 ContactHigh proves that **killer brand voice can make any simple idea interesting**. We take mundane contact management and make it feel like a conversation with your slightly chaotic but endearing friend.
 
+## What ContactHigh Actually Does
+
+**The Core Function:** ContactHigh just logs when and where you saved your contacts to your phone. It doesn't save contacts - it enhances the ones you already have.
+
+**The Real Problem:** When you save a contact, there's no easy way to remember their name or where you met them later. If you don't call or text them immediately, it's hard to ever find them again. This applies to romantic connections, friendships, business networking - especially when you do a lot of networking.
+
+**The Solution:** With ContactHigh, you don't have to say "let me quickly text you now" or "let me just ring you once." It just works. In fact, it's insane that Apple/Samsung haven't added this as a native feature of their contacts apps.
+
+**The Value:** Never again will you scroll through your contacts thinking "what's their name again?" "I can't find their contact." ContactHigh gives you the context you need to actually follow up with people you've met.
+
 ## Core Tone Principles
 
 ### 1. **Honest About Limitations**

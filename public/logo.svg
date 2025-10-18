@@ -1,0 +1,14 @@
+<svg width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Icon -->
+  <g>
+    <!-- Outer circle -->
+    <circle cx="30" cy="30" r="24" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Inner crescent/partial circle -->
+    <path d="M18 30C18 22.268 24.268 16 32 16" stroke="black" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Accent dot -->
+    <circle cx="42" cy="26" r="2" fill="#FEE08B"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="70" y="38" font-family="Nunito Sans, sans-serif" font-size="24" font-weight="700" fill="black">Contact High</text>
+</svg>
