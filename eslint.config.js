@@ -1,5 +1,4 @@
 import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -11,7 +10,6 @@ const compat = new FlatCompat({
 });
 
 const config = [
-  js.configs.recommended,
   ...compat.extends('next/core-web-vitals'),
   {
     ignores: [
