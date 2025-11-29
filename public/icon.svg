@@ -1,8 +1,22 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .background { fill: white; }
+      .foreground { stroke: black; fill: black; }
+      .accent { fill: #FEE08B; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: black; }
+      .foreground { stroke: white; fill: white; }
+      .accent { fill: #FEE08B; }
+    }
+  </style>
+  <!-- Background circle -->
+  <circle class="background" cx="90" cy="90" r="90"/>
   <!-- Outer circle -->
-  <circle cx="32" cy="32" r="28" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="90" cy="90" r="78" class="foreground" stroke-width="8" fill="none"/>
   <!-- Inner crescent/partial circle -->
-  <path d="M12 32C12 20.954 20.954 12 32 12" stroke="black" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M42 90C42 62.3858 64.3858 40 92 40" class="foreground" stroke-width="8" stroke-linecap="round" fill="none"/>
   <!-- Accent dot -->
-  <circle cx="50" cy="26" r="3" fill="#FEE08B"/>
+  <circle cx="140" cy="72" r="8" class="accent"/>
 </svg>
